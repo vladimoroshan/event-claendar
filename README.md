@@ -1,7 +1,5 @@
 # Google-like Event Calendar using React/Redux/Express/MongoDB
 
-- [Deployement on Heroku](#deployement-on-heroku)
-
 Usage
     - First register and log in with your username and password to be redirected to the calendar.
     - Click on empty row or select several rows to add new event. If there is event already on required row, click on the small empty space on right from the event.
@@ -37,58 +35,4 @@ So now you can go to
 - http://localhost:5000/: The website based on client/build (that you can update with `$ (cd client && npm run build)`)
 - http://localhost:3000/: React application that is calling server API 
 
-
-
-## Deployement on Heroku
-
-### To deploy the first time
-
-Create a project on Heroku.com. Here for the demo I named the project "my-ironhack-project". 
-
-Then, you need to link your Git project with Heroku.
-
-```sh
-# Replace "my-ironhack-project" by the name of your Heroku project
-$ heroku git:remote -a my-ironhack-project 
-$ git push heroku master
-```
-
-Then you need to create a Mongo database online with MLab.
-
-```sh
-$ heroku addons:create mongolab:sandbox
-```
-
-
-### To redeploy
-
-You just need to push on `heroku` (don't forget to commit before):
-```sh
-$ git push heroku master
-```
-
-### To execute a seed
-
-If you want to execute something on the server, for example a seed, you can use `heroku run`.
-
-Example:
-```
-$ heroku run node server/bin/seeds.js
-```
-
-
-### To Open MongoLab
-
-You can either go on the Heroku project page ("Overview" tab) or type the following command:
-
-```
-$ heroku addons:open mongolab
-```
-
-
-### See the logs
-
-```sh
-$ heroku logs
-```
 
