@@ -1,13 +1,13 @@
 # Google-like Event Calendar using React/Redux/Express/MongoDB
 
-Usage
-    - First register and log in with your username and password to be redirected to the calendar.
-    - Click on empty row or select several rows to add new event. If there is event already on required row, click on the small empty space on right from the event.
-    - Resize or drag and drop to change start and end end time of the event 
-    - Click on event to edit or delete.
-    - Use arrows to change date.
-    - Click on "today" to return to the current date.
-    - To download your events click on "Export As JSON".
+## Usage
+    * First register and log in with your username and password to be redirected to the calendar.
+    * Click on empty row or select several rows to add new event. If there is event already on required row, click on the small empty space on right from the event.
+    * Resize or drag and drop to change start and end end time of the event 
+    * Click on event to edit or delete.
+    * Use arrows to change date.
+    * Click on "today" to return to the current date.
+    * To download your events click on "Export As JSON".
 
 
 **To install all the packages**
