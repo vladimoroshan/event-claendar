@@ -4,7 +4,12 @@
   "private": true,
   "scripts": {
     "preinstall": "echo --- preinstall --- && cd server && npm install && cd ../client && npm install && npm run build && cd ..",
-    "start": "cd server && node app.js",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client/ && npm install cd server/&& npm install --only=dev --no-shrinkwrap && npm run build",
+    
     "dev:server": "cd server && npm run dev",
     "dev:client": "cd client && npm run start"
   },
