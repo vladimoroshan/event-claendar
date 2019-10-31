@@ -1,4 +1,5 @@
-# Google-like Event Calendar using React/Redux/Express/MongoDB
+# Google-like Event Calendar with JavaScript
+This project is using React and Redux on the client side. On the backed Express and MongoDB
 
 ## 1: Install packages
 ```sh
